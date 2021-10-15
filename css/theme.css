@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Allessa';
+    src: url(../fonts/Allessa/Allessa\ Personal\ Use.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nexa-bold';
+    src: url(../fonts/Nexa/Nexa-Bold.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Nexa-light';
+    src: url(../fonts/Nexa/Nexa-Light.otf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --gold: #FBC403;
+    --yellow: #FFDD03;
+    --lightblack: #151515;
+    --darkblack: #0A0A0A;
+    --cream: #FBFCD4;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--darkblack);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    transition: 300ms ease-in-out;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+}
+body{
+    font-family: 'Nexa-light';
+    background-color: var(--lightblack);
+    color: var(--yellow);
+}
+a{ 
+    color: var(--gold); 
+}
+div {
+    font-size: .8rem;
+}
+h1,h2,h3 {
+    font-family: 'Nexa-bold';
+    line-height: 110%;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+h4,h5,h6 {
+    font-family: 'Nexa-light';
+    line-height: 110%;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+p {
+    font-family: 'Nexa-light';
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 180%;
+    font-size: 15px;
+    margin: 20px 0px;
+    color: var(--gold);
+}
+i {
+    font-size: 15px;
+}
+a{
+    font-family: 'Allessa';
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    font-weight: 600;
+    cursor: pointer;
+}
+li {
+    font-family: 'Allessa';
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    list-style-type: none;
+    margin: .3rem 0rem;
+}
+form{
+    background-image: url('../images/contactbg.png');
+    background-size: contain;
+    color: var(--cream);
+    display: flex;
+    padding: 2rem 3rem;
+    flex-direction: column;
+}
+input, textarea{
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    margin: .2rem 0;
+    font-size: .8rem;
+}
