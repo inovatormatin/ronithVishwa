@@ -5,14 +5,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: absolute; */
     width: 100%;
+    padding: 2rem 3rem;
 }
-#home img{
-    width: 35vw;
-    position: relative;
-    top: 15%;
-    left: 40%;
+#home span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+#home h1,#home p{
+    font-family: "Allessa";
 }
 #socialMedia{
     position: absolute;
@@ -21,21 +24,20 @@
     background-color: var(--lightblack);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    padding: 0 1.5rem 0 .7rem;
-    display: flex;
-    align-items: center;
+    padding: 0rem 0rem 0rem .7rem;
     cursor: pointer;
     color: var(--gold);
 }
 #socialMedia a{
     font-size: 1.5rem;
     margin: 0 .5rem;
-    width: 2rem;
+    display: flex;
+    align-items: center;
     transition: 300ms ease-in-out;
 }
 #socialMedia p{
     transition: 300ms ease-in-out;
-    margin: .7rem 0;
+    margin: .7rem .7rem;
 }
 #socialMedia:hover a, #socialMedia:hover p{
     color: var(--cream);
@@ -49,18 +51,37 @@
     text-align: right;
 }
 
+
+/* about */
+#aboutus p{
+    text-align: justify;
+}
+#aboutus hr{
+    width: 20vw;
+    height: 5px;
+    background-color: var(--gold);
+}
 /* footer */
 footer{
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+/* map */
+iframe{
+    grid-column-start:1;
+    grid-column-end:3;
+    height: 100%;
 }
 /* address */
 address{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     background-color: var(--darkblack);
     padding: 2.5rem;
     margin: 0;
+    grid-row-start:2;
+    grid-row-end:3;
 }
 .addressLine{
     grid-row-start:1;
@@ -69,6 +90,11 @@ address{
 .footerLine{
     grid-row-start:3;
     grid-row-end:4;
+    padding-top: 2rem;
+}
+.footerLine i{
+    width: 2.5rem;
+    text-align: center
 }
 address span{
     display: flex;
@@ -82,6 +108,10 @@ address p{
     margin: .3rem 0;
 }
 /* form */
+form{
+    grid-row-start:2;
+    grid-row-end:3;
+}
 form button{
     border: solid var(--cream) 1.5px;
     border-radius: 3px;

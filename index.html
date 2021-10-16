@@ -18,10 +18,13 @@
 <body>
     <!-- home -->
     <section id="home">
-        <img src="./images/homelogo.png" alt="homeLogo">
+        <span>
+            <h1>Ronith Vishwa</h1>
+            <p>redifine your style</p>
+        </span>
         <div id="socialMedia">
-            <a href="#" class="fa fa-instagram"></a>
-            <p>@manish</p>
+            <a href="https://www.instagram.com/label_ronithvishwa/?utm_medium=copy_link" class="fa fa-instagram">
+            <p style="font-family: Nexa-light;">@label_ronithvishwa</p></a>
         </div>
     </section>
 
@@ -36,6 +39,7 @@
         can pick the right pair of clothes for any ocassion here. Label 
         Ronith Vishwa also offers styling services, so if you ever want 
         an extra pair of hands to add style to fashion, you know where to go.</p>
+        <hr>
     </section>
 
     <!-- gallery -->
@@ -80,6 +84,13 @@
     <!-- footer -->
     <footer class="container my-5">
         <!-- address -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2593030341527!2d78.38646641487652!3d17.39933928807147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzU3LjYiTiA3OMKwMjMnMTkuMiJF!5e0!3m2!1sen!2sin!4v1634393156329!5m2!1sen!2sin" 
+            width="100%"  
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
         <address>
             <div class="addressLine">
                 <h2>LOCATION</h2>
@@ -88,19 +99,27 @@
             <div class="footerLine">
                 <h3>Follow us</h3>
                 <span>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <p>@manish</p>
+                    <i class="fa fa-instagram"></i>
+                    <p>@label_ronithvishwa</p>
+                </span>
+                <span>
+                    <i class="fa fa-envelope"></i>
+                    <p>Ronithvishwaofficial@gmail.com</p>
+                </span>
+                <span>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 93982 76717</p>
                 </span>
                 <p>&copy; 2021 Privacy Policy</p>
             </div>
         </address>
         <!-- contact us -->
-        <form action="">
+        <form action="mail.php" method="post">
             <h2>CONTACT US</h2>
-            <input type="text" placeholder="Enter Your Name">
-            <input type="text" placeholder="Enter Your E-mail">
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="text" name="email" placeholder="Enter Your E-mail">
             <textarea name="desc" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-            <button>SUBMIT</button>
+            <button type="submit">SUBMIT</button>
         </form>
     </footer>
 
