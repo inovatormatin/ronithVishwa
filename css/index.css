@@ -30,6 +30,9 @@
 #home h1{
     font-family: "Allessa";
 }
+.tagLine{
+    display: none;
+}
 #socialMedia{
     position: absolute;
     bottom: 5%;
@@ -212,8 +215,24 @@ form button:hover{
         background-image: url("../images/mobbg.png");
         background-position: center;
     }
+    #home span{
+        flex-direction: column;
+    }
     #home nav{
         display: none;
+    }
+    #home h1{
+        font-size: 40px;
+        width: 80%;
+        margin: auto;
+        line-height: 2;
+        text-align: center;
+    }
+    .tagLine{
+        display: block;
+        letter-spacing: 2px;
+        font-family: "Nexa-light";
+        color: var(--cream);
     }
     .footerLine i{
         font-size: 1rem;
