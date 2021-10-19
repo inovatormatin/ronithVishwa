@@ -5,16 +5,29 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    /* width: 100%; */
     padding: 2rem 3rem;
 }
 #home span{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: max-content;
 }
-#home h1,#home p{
+#home nav{
+    display: flex;
+}
+#home nav a{
+    font-size: 1rem;
+    font-family: "Nexa-bold";
+    margin-left: 25px;
+    color: var(--darkblack);
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+#home nav a:hover{
+    color: var(--cream);
+}
+#home h1{
     font-family: "Allessa";
 }
 #socialMedia{
@@ -47,8 +60,14 @@
 .item img{
     height: 500px;
 }
-.owl-theme .owl-nav.disabled+.owl-dots {
-    text-align: right;
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    color: var(--darkblack);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Nexa-bold";
+    background-color: var(--gold);
+    width: 2.5rem;
+    border-radius: 50%;
 }
 
 
@@ -115,9 +134,9 @@ form{
 form button{
     border: solid var(--cream) 1.5px;
     border-radius: 3px;
-    padding: .2rem 0;
+    padding: .2rem 0.6rem;
     margin: .2rem 0;
-    width: 20%;
+    width: fit-content;
     font-family: 'Nexa-light';
     color: var(--cream);
     letter-spacing: 2px;
@@ -130,3 +149,74 @@ form button:hover{
     letter-spacing: 2.2px;
 }
 
+/* tab views css */
+@media screen and (max-width: 768px) {
+    #home nav a {
+        font-size: .7rem;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #socialMedia a {
+        font-size: 1.3rem;
+    }
+    #socialMedia p {
+        margin: .5rem .7rem;
+    }
+    .item img {
+        height: 400px;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+        font-size: 1.3rem;
+        width: 2rem;
+    }
+    form{
+        background-size: contain;
+    }
+}
+
+/* mob views css */
+@media screen and (max-width: 426px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    iFrame{
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+        width: 100%;
+    }
+    address {
+        grid-row-start:1;
+        grid-row-end:2;
+        width: 100%;
+        padding: 1rem;
+    }
+    address p{
+        font-size: 12px;
+    }
+    address h1{
+        font-size: 20px;
+    }
+    form {
+        grid-row-start:3;
+        grid-row-end:4;
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    #home{
+        background-position: left;
+        background-image: url("../images/mobbg.png");
+        background-position: center;
+    }
+    #home nav{
+        display: none;
+    }
+    .footerLine i{
+        font-size: 1rem;
+        width: 2rem;
+    }
+}
